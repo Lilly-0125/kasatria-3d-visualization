@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>3D Data Visualization</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Google Identity Services -->
+    <script src="https://accounts.google.com/gsi/client"></script>
+
+
+    <!-- Three.js -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+        }
+    }
+    </script>
+
+</head>
+
+
+<body>
+
+
+    <!-- LOGIN SCREEN -->
+    <div id="login-page">
+
+        <h1>Welcome Back</h1>
+
+        <p>
+            Sign in to access the 3D Data Visualization
+        </p>
+
+
+        <button id="google-login-button">
+         Sign in with Google
+        </button>
+
+        <p id="login-status"></p>
+
+    </div>
+
+
+
+    <!-- 3D VISUALIZATION -->
+    <div id="visualization-page"
+         style="display: none;">
+
+        <div id="container"></div>
+
+
+        <div id="loading">
+            Loading Google Sheet...
+        </div>
+
+    <div id="bottom-controls">
+
+        <div id="menu">
+
+            <button id="table">
+                TABLE
+            </button>
+
+            <button id="sphere">
+                SPHERE
+            </button>
+
+            <button id="helix">
+                HELIX
+            </button>
+
+            <button id="grid">
+                GRID
+            </button>
+             <!-- NET WORTH PARAMETER -->
+            <div id="legend">
+
+             <span>LOW</span>
+
+             <div id="color-scale"></div>
+
+             <span>HIGH</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script type="module"
+            src="main.js">
+    </script>
+
+
+</body>
+
+</html>

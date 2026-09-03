@@ -1,0 +1,344 @@
+body {
+    margin: 0;
+
+    background-color: #000000;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    overflow: hidden;
+}
+
+
+
+/* ============================= */
+/* LOGIN PAGE                     */
+/* ============================= */
+
+#login-page,
+#authorize-page {
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle,
+            #193850 0%,
+            #07121c 55%,
+            #000000 100%
+        );
+}
+
+
+#login-page h1,
+#authorize-page h1 {
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+
+#login-page p,
+#authorize-page p {
+
+    color: #cccccc;
+
+    margin-bottom: 30px;
+}
+
+
+#google-signin-button {
+
+    min-height: 44px;
+}
+
+
+#login-status {
+
+    margin-top: 20px;
+
+    color: #ff9999;
+}
+
+
+
+/* ============================= */
+/* VISUALIZATION                  */
+/* ============================= */
+
+#visualization-page {
+
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#container {
+
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+/* ============================= */
+/* 3D CARD                        */
+/* ============================= */
+
+.element {
+
+    width: 120px;
+    height: 150px;
+
+    border-radius: 8px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.4);
+
+    box-shadow:
+        0 0 12px
+        rgba(255, 255, 255, 0.25);
+
+    text-align: center;
+
+    cursor: default;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+
+.number {
+
+    position: absolute;
+
+    top: 5px;
+    left: 6px;
+
+    font-size: 10px;
+
+    color:
+        rgba(255, 255, 255, 0.8);
+}
+
+
+
+.photo {
+
+    width: 55px;
+    height: 55px;
+
+    margin-top: 15px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border:
+        2px solid
+        rgba(255, 255, 255, 0.8);
+}
+
+
+
+.name {
+
+    margin-top: 4px;
+
+    padding: 0 4px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    color: white;
+}
+
+
+
+.info {
+
+    margin-top: 2px;
+
+    font-size: 8px;
+
+    color:
+        rgba(255, 255, 255, 0.9);
+}
+
+
+
+.networth {
+
+    margin-top: 3px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    color: white;
+}
+
+
+
+/* ============================= */
+/* NET WORTH COLORS               */
+/* ============================= */
+
+.net-red {
+
+    background-color:
+        rgba(180, 30, 30, 0.85);
+}
+
+
+.net-orange {
+
+    background-color:
+        rgba(225, 125, 20, 0.88);
+}
+
+
+.net-green {
+
+    background-color:
+        rgba(25, 145, 65, 0.88);
+}
+
+
+
+
+#bottom-controls {
+
+    position: absolute;
+
+    bottom: 25px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 1000;
+}
+
+
+#menu {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+}
+
+
+/* NET WORTH PARAMETER*/
+
+#legend {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    margin-left: 10px;
+
+    padding: 5px 8px;
+
+    border: 1px solid red;
+
+    background-color: rgba(0, 0, 0, 0.75);
+
+    color: white;
+
+    font-size: 11px;
+}
+
+
+#color-scale {
+
+    width: 120px;
+
+    height: 10px;
+
+    background: linear-gradient(
+        to right,
+        red,
+        orange,
+        yellow,
+        green
+    );
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+button {
+
+    color:
+        rgba(127, 255, 255, 0.95);
+
+    background:
+        rgba(0, 0, 0, 0.4);
+
+    border:
+        1px solid
+        rgba(127, 255, 255, 0.8);
+
+    padding:
+        10px 20px;
+
+    margin: 3px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+
+    background-color:
+        rgba(0, 255, 255, 0.2);
+}
+
+
+
+/* ============================= */
+/* LOADING                        */
+/* ============================= */
+
+#loading {
+
+    position: absolute;
+
+    top: 20px;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    font-size: 14px;
+
+    color: white;
+}
